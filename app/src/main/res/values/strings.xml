@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MaterialDesign</string>
+    <string name="hint_usuario">Usuário</string>
+    <string name="hint_senha">Senha</string>
+</resources>
