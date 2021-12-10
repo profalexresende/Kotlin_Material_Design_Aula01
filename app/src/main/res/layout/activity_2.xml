@@ -6,5 +6,52 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".Activity2">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+            <RadioButton
+                    android:text="Masculino"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rdbMasc"/>
+            <RadioButton
+                    android:text="Feminino"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rdbFem"/>
 
+        </RadioGroup>
+        <Button
+                android:text="Checar Radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnChecarRadio"/>
+        <CheckBox
+                android:text="C#"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/check_CSharp"/>
+        <CheckBox
+                android:text="Kotlin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/check_Kotlin"/>
+        <CheckBox
+                android:text="Java"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/check_Java"/>
+        <Button
+                android:text="Verificar Check Box"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnVerificarCheck"/>
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

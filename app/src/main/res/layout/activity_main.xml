@@ -10,7 +10,8 @@
     <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" tools:layout_editor_absoluteY="118dp"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteY="118dp"
             tools:layout_editor_absoluteX="87dp">
 
         <com.google.android.material.textfield.TextInputLayout
@@ -42,7 +43,7 @@
         <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:gravity="right">
             <com.google.android.material.button.MaterialButton
                     android:id="@+id/next_button"
@@ -63,5 +64,29 @@
                     android:layout_toLeftOf="@id/next_button"
                     android:text="@string/btnCancel" />
         </LinearLayout>
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+        >
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fabAdicionar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:layout_margin="16dp"
+                    android:backgroundTint="@color/design_default_color_primary"
+                    app:icon="@drawable/add"
+            />
+            <!--<com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                    android:id="@+id/fabAdicionar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:layout_gravity="right|bottom"
+                    android:text="Extended FAB"
+                    app:icon="@drawable/add"
+            />-->
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
